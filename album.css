@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor:url(img/umbrella.cur),
+default;
+}
+
+header{
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 2px;
+}
+
+.album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 2vw;
+    background-color: black;
+
+}
+
+.foto-album img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.foto-album {
+    width: 400px;
+    height: 250px;
+    border: 10px solid darkred;
+    box-shadow: 5px 5px 5px purple;
+    transition: transform .3s;
+    filter:grayscale(100%);
+}
+
+h1{
+    background-color: darkred;
+    color: darkblue;
+    text-align: center;
+    text-shadow: 1px 1px black;   
+}
+
+.foto-album:hover{
+    transform: scale(1.5);
+    filter:grayscale(0);
+}
+
+footer{
+    color: red;
+    background-color: black;
+    text-align: right;
+}
